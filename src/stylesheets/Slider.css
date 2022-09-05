@@ -1,0 +1,324 @@
+body {
+    background-color: #272727;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: "";
+    font-size: 0;
+}
+
+.AllSlide {
+    width: 1807px;
+    height: 971px;
+    margin: auto;
+}
+
+.AllSlide li.slick-active button {
+    background-color: #e8aa31;
+}
+
+.slick-slider .slick-dots {
+    padding: 0;
+    border-radius: 0;
+}
+
+.AllSlide .slick-dots {
+    width: 1080px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.AllSlide .slick-dots li {
+    width: 360px;
+    height: 150px;
+    left: 0;
+    margin: 0;
+    background-color: #272727;
+}
+
+.settingsSlider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 55px 75px 55px 75px;
+    justify-content: space-between;
+}
+
+.slick-active > .settingsSlider .numberSlide {
+    color: #fcd54c;
+}
+
+.numberSlide {
+    color: white;
+    font-size: 44px;
+}
+
+.TextSlide {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.InfoSlide {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 276px;
+    margin-left: 354px;
+    padding: 44px 0 51px 30px;
+    background-image: url(../images/backSldie.png);
+    background-size: cover;
+}
+
+.InfoSlide span:nth-child(1) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.InfoSlide span:nth-child(2) {
+    margin-top: 22px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100px;
+    /* or 104% */
+
+    text-transform: capitalize;
+}
+
+.InfoSlide span:nth-child(2) span {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 100px;
+    text-transform: capitalize;
+    color: #fcd54c;
+}
+
+.InfoSlide span:nth-child(3) {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #ffffff;
+}
+
+.InfoSlide span:nth-child(3) i {
+    margin-left: 5px;
+}
+
+.DivSlide img {
+    width: 100%;
+    height: 100%;
+}
+
+.AllCard {
+    width: 430px;
+    height: 573px;
+    background-color: #fcd54c;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+
+.AllCard span:nth-child(1) {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: #272727;
+    margin-top: 46px;
+}
+
+.AllCard span:nth-child(2) {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #272727;
+    margin-top: 140px;
+}
+
+.AllCardA {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-bottom: 44px;
+    align-items: flex-end;
+}
+
+.AllCardA a {
+    display: flex;
+    flex-direction: row;
+}
+
+.AllCardA a:hover > i {
+    animation: alternate;
+    transition: 0.5s;
+    margin-left: 30px;
+    color: #272727;
+}
+
+.AllCardA a i {
+    transition: 0.5s;
+}
+
+.AllCardA p {
+    text-align: start;
+    align-items: flex-end;
+    display: flex;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #272727;
+    height: 100%;
+}
+
+.AllCard a i {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    align-items: flex-end;
+}
+
+.MiniSlider .slick-dots li {
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.MiniSlider .slick-dots li button {
+    height: 13px;
+    width: 13px;
+    background-color: #929292;
+    transition: 0.25s;
+    border-radius: 50%;
+}
+
+.MiniSlider .slick-dots .slick-active button {
+    background-color: #fcd54c;
+    transition: 0.25s;
+}
+
+.MiniSlider .slick-dots li button:before {
+    display: none;
+}
+
+.UpSlider {
+    margin: 0 360px 0 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.UpSliderS span {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    color: #ffffff;
+}
+.active {
+    background-color: red;
+}
+.UpSliderO ol {
+    display: flex;
+    flex-direction: row;
+}
+.AllLi,
+.BuildingLi,
+.InteriorLi {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+.UpSliderO ol li:nth-child(4) {
+    font-family: "Gilroy";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #929292;
+}
+.UpSliderO ol li:nth-child(1),
+.UpSliderO ol li:nth-child(2) {
+    margin-right: 30px;
+}
+.UpSliderO ol li:nth-child(3) {
+    margin-right: 45px;
+}
+.activeLi {
+    color: #fcd54c;
+}
+.AllCardImage {
+    width: 430px;
+    height: 572px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ShadowBlock {
+    width: 430px;
+    height: 572px;
+    transition: 0.5s;
+}
+
+.ShadowBlock img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.AllCardImageSpan {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.AllCardImage:hover > .ShadowBlock {
+    background-color: black;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.AllCardImage:hover > .ShadowBlock img {
+    transform: scale(1.2);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.AllCardImage:hover > .AllCardImageSpan {
+    font-size: 40px;
+    color: #e8aa31;
+    transition: 0.5s;
+}
