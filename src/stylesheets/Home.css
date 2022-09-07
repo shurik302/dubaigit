@@ -6,3 +6,118 @@
     margin-bottom: 70px;
     margin: 80px 55px 100px 55px;
 }
+
+.InfoOne {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 31% 90px 31%;
+}
+.InfoOne span:nth-child(1) {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: #fcd54c;
+    margin-bottom: 40px;
+}
+.InfoOne span:nth-child(2) {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 69px;
+    color: #e8e8e8;
+    margin-bottom: 33px;
+}
+.InfoOne span:nth-child(3) {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #e8e8e8;
+}
+.VideoLogo {
+    width: 1800px;
+    height: 921px;
+    display: flex;
+    margin: auto;
+}
+
+.CitateBig {
+    border: 1px solid #fcd54c;
+    width: 58%;
+    display: flex;
+    margin: auto;
+    margin-top: 118px;
+    margin-bottom: 64px;
+    padding: 70px 94px 69px 97px;
+}
+.CitateBig span {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 160%;
+    color: #ffffff;
+}
+.NameOfCitate {
+    color: #fcd54c !important;
+}
+
+.InfoHotelRoom {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 115px;
+    width: 58%;
+}
+.InfoHotelRoom div img {
+    width: 543px;
+    height: 312px;
+    margin-bottom: 70px;
+}
+.InfoHotelRoom div span {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #e8e8e8;
+}
+
+@media (max-width: 1440px) {
+    .InfoOne {
+        margin: 70px 20% 90px 20%;
+    }
+}
+@media (max-width: 1024px) {
+    .InfoOne {
+        margin: 70px 12% 90px 12%;
+    }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+    .InfoOne {
+        margin: 70px 5% 90px 5%;
+    }
+    .InfoOne span:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .InfoOne span:nth-child(2) {
+        font-size: 50px;
+    }
+    .InfoOne span:nth-child(3) {
+        font-size: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .InfoOne span:nth-child(2) {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 320px) {
+}

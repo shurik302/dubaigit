@@ -5,7 +5,7 @@ import CardSliderMiniImage from "./CardSliderMiniImage";
 import first from "../images/first.png";
 import "../stylesheets/Slider.css";
 /* import LiShowSldie from "../Tech/Function"; */
-import selectDate from "../Tech/Function";
+import { selectDate, selectDateS, selectDateT } from "../Tech/Function";
 
 export default class SimpleSlider extends Component {
     render() {
@@ -25,20 +25,13 @@ export default class SimpleSlider extends Component {
                     </div>
                     <div className="UpSliderO">
                         <ol>
-                            <li
-                                onClick={selectDate}
-                                className="AllLi activeLi active"
-                            >
+                            <li onClick={selectDate} className="AllLi active">
                                 All
                             </li>
-                            <li
-                                /* onClick={selectDate} */ className="BuildingLi "
-                            >
+                            <li onClick={selectDateS} className="BuildingLi ">
                                 Building
                             </li>
-                            <li
-                                /* onClick={selectDate} */ className="InteriorLi "
-                            >
+                            <li onClick={selectDateT} className="InteriorLi ">
                                 Interior
                             </li>
                             <li>
@@ -55,7 +48,7 @@ export default class SimpleSlider extends Component {
                             textCard="Villas"
                         />
                     </div>
-                    <div className="InteriorЕ test">
+                    <div className="Interior">
                         <CardSliderMiniInfo
                             name="Dubai"
                             info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit."

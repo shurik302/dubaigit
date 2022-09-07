@@ -14,7 +14,6 @@ function App() {
         <Router>
             <span>
                 Perevoda poka ne budet. Etot font-style ne podderjivaet ruskiy.
-                TEST
             </span>
             <Navigation />
             <Routes>

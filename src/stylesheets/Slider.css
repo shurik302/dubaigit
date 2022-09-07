@@ -82,6 +82,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    color: white;
 }
 
 .InfoSlide span:nth-child(2) {
@@ -89,7 +90,7 @@ body {
     font-weight: 700;
     font-size: 96px;
     line-height: 100px;
-    /* or 104% */
+    color: white;
 
     text-transform: capitalize;
 }
@@ -235,7 +236,13 @@ body {
     color: #ffffff;
 }
 .active {
-    background-color: red;
+    color: #e8aa31 !important;
+}
+.activeSlide {
+    display: block;
+}
+.activeSlideN {
+    display: none;
 }
 .UpSliderO ol {
     display: flex;

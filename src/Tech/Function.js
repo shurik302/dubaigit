@@ -1,34 +1,47 @@
-/* export default function LiShowSldie() { */
-/* const BuildingLi = document.querySelector(".BuildingLi");
-    BuildingLi.classList.toggle("activeLi");
-    const InteriorЕ = document.querySelector(".InteriorЕ");
-    console.log(InteriorЕ);
-    const AllLi = document.querySelector(".AllLi");
-    if (InteriorЕ.classList.contains("test")) {
-        console.log("Первый слайд имеет класс тест");
-    } else {
-        console.log("Первый слайд не имеет класс тест");
-    } */
-/* document.addEventListener("click", function (e) {
-        console.log(e.target);
-        if (e.target.classList.contains("AllLi")) {
-            console.log("Да");
-        } else {
-            console.log("Нет");
-        }
-    }); */
-/* const array = [AllLi, BuildingLi, InteriorЕ]; */
-/* } */
+export default function F() {
+    console.log("еуіе");
+}
 
-export default function selectDate() {
-    /* const BuildingLi = document.querySelector(".BuildingLi");
-    const InteriorLi = document.querySelector(".InteriorLi"); */
-    console.log("Да");
+export function selectDate() {
     const AllLi = document.querySelector(".AllLi");
+    const BuildingLi = document.querySelector(".BuildingLi");
+    const InteriorLi = document.querySelector(".InteriorLi");
+    const AllCard = document.querySelector(".AllCard");
     if (AllLi.classList.contains("active")) {
-        AllLi.classList.remove("active");
-        console.log("Да");
+        console.log("Пользователь даун 1");
     } else {
         AllLi.classList.add("active");
+        BuildingLi.classList.remove("active");
+        InteriorLi.classList.remove("active");
+        AllCard.classList.add("activeSlideN");
+    }
+}
+
+export function selectDateS() {
+    const AllLi = document.querySelector(".AllLi");
+    const BuildingLi = document.querySelector(".BuildingLi");
+    const InteriorLi = document.querySelector(".InteriorLi");
+    const AllCard = document.querySelector(".AllCard");
+    if (BuildingLi.classList.contains("active")) {
+        console.log("Пользователь даун 2");
+    } else {
+        AllLi.classList.remove("active");
+        BuildingLi.classList.add("active");
+        InteriorLi.classList.remove("active");
+        AllCard.classList.add("activeSlideN");
+    }
+}
+export function selectDateT() {
+    const AllLi = document.querySelector(".AllLi");
+    const BuildingLi = document.querySelector(".BuildingLi");
+    const InteriorLi = document.querySelector(".InteriorLi");
+    const Interior = document.querySelector(".Interior");
+    if (InteriorLi.classList.contains("active")) {
+        console.log("Пользователь даун 3");
+    } else {
+        AllLi.classList.remove("active");
+        BuildingLi.classList.remove("active");
+        InteriorLi.classList.add("active");
+        Interior.classList.add("activeSlideN");
     }
 }
