@@ -10,7 +10,7 @@
 .InfoOne {
     display: flex;
     flex-direction: column;
-    margin: 70px 31% 90px 31%;
+    margin: 70px auto 90px auto;
 }
 .InfoOne span:nth-child(1) {
     font-family: "Work Sans";
@@ -39,15 +39,13 @@
     color: #e8e8e8;
 }
 .VideoLogo {
-    width: 1800px;
-    height: 921px;
+    width: 94%;
     display: flex;
     margin: auto;
 }
 
 .CitateBig {
     border: 1px solid #fcd54c;
-    width: 58%;
     display: flex;
     margin: auto;
     margin-top: 118px;
@@ -67,16 +65,14 @@
 }
 
 .InfoHotelRoom {
+    margin: auto;
     display: flex;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 115px;
-    width: 58%;
+    gap: 24px;
 }
+
 .InfoHotelRoom div img {
-    width: 543px;
-    height: 312px;
+    width: 100%;
     margin-bottom: 70px;
 }
 .InfoHotelRoom div span {
@@ -88,22 +84,34 @@
     color: #e8e8e8;
 }
 
+.OneLine {
+    width: 58%;
+}
+
 @media (max-width: 1440px) {
-    .InfoOne {
-        margin: 70px 20% 90px 20%;
+    .OneLine {
+        width: 65%;
     }
 }
 @media (max-width: 1024px) {
     .InfoOne {
-        margin: 70px 12% 90px 12%;
+    }
+    .OneLine {
+        width: 75%;
     }
 }
 @media (max-width: 768px) {
+    .OneLine {
+        width: 80%;
+    }
+    .InfoHotelRoom {
+        flex-direction: column;
+    }
+    .CitateBig {
+        padding: 30px 30px 30px 30px;
+    }
 }
 @media (max-width: 425px) {
-    .InfoOne {
-        margin: 70px 5% 90px 5%;
-    }
     .InfoOne span:nth-child(1) {
         margin-bottom: 20px;
     }
@@ -113,6 +121,15 @@
     .InfoOne span:nth-child(3) {
         font-size: 15px;
     }
+    .OneLine {
+        width: 85%;
+    }
+    .CitateBig span {
+        font-size: 20px;
+    }
+    .InfoHotelRoom div span {
+        font-size: 12px;
+    }
 }
 @media (max-width: 375px) {
     .InfoOne span:nth-child(2) {
@@ -120,4 +137,7 @@
     }
 }
 @media (max-width: 320px) {
+    .OneLine {
+        width: 90%;
+    }
 }

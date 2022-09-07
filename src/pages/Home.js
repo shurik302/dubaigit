@@ -13,7 +13,7 @@ function Home() {
             <div className="HomeSlide">
                 <SliderPred />
             </div>
-            <div className="InfoOne">
+            <div className="InfoOne OneLine">
                 <span>Our expertise</span>
                 <span>
                     "The best apartment in Dubai" we will find your dream
@@ -38,7 +38,7 @@ function Home() {
             <video className="VideoLogo" controls preload="metadata">
                 <source src={VideoLogo} type="video/mp4" />
             </video>
-            <div className="CitateBig">
+            <div className="CitateBig OneLine">
                 <span>
                     “Don’t limit yourself. Many people limit themselves to what
                     they think they can do. You can go as far as your mind lets
@@ -46,7 +46,7 @@ function Home() {
                     <span className="NameOfCitate">— Mary Kay Ash</span>{" "}
                 </span>
             </div>
-            <div className="InfoHotelRoom">
+            <div className="InfoHotelRoom OneLine">
                 <div>
                     <img src={One}></img>
                     <span>
