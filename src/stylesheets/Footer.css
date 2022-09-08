@@ -119,6 +119,7 @@
 .IconsCop {
     display: flex;
     gap: 30px;
+    color: white;
 }
 .IconsCop a i {
     font-size: 17px;

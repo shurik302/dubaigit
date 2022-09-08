@@ -1,17 +1,22 @@
 import React from "react";
 import "../stylesheets/Navigation.css";
 import logo from "../images/logoSait.png";
+import MiniLogo from "../images/MiniLogo.png";
+import { CheckSv } from "../Tech/Function";
+import { Razv } from "../Tech/Function";
 
 function Navigation() {
     return (
-        <div className="Navigation">
+        <div className="Navigation" onClick={CheckSv}>
             <div className="RightNav">
                 <div className="logo">
-                    <img src={logo} />
+                    <img className="LogoI" src={logo} />
+                    <img className="MiniLogoI" src={MiniLogo} />
                 </div>
+                <i class="fa-solid fa-bars"></i>
                 <ol className="pages">
                     <li className="Buy">
-                        <div>
+                        <div className="Razv" onClick={Razv}>
                             <a className="BuyA">BUY</a>
                             <i class="fa-solid fa-caret-down"></i>
                         </div>
@@ -59,7 +64,10 @@ function Navigation() {
                 </div>
 
                 <div className="tel">
-                    <a href="tel:+72126742510">+7 (212) 674-25-10</a>
+                    <a href="tel:+72126742510">
+                        <span className="NumberPhone">+7 (212) 674-25-10</span>
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
                 </div>
             </div>
         </div>

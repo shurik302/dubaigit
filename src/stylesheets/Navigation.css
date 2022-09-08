@@ -9,6 +9,7 @@
     margin: auto;
     justify-content: space-between;
 }
+
 .RightNav {
     display: flex;
     flex-direction: row;
@@ -23,7 +24,12 @@
     height: 63px;
     object-fit: fill;
 }
-
+.LogoI {
+    display: block;
+}
+.MiniLogoI {
+    display: none;
+}
 .pages {
     margin-left: 150px;
     display: flex;
@@ -119,10 +125,6 @@
     transition: 0.25s;
 }
 
-.Buy:hover > .BuyO {
-    display: block;
-}
-
 .Buy div i {
     transition: 0.5s;
 }
@@ -193,6 +195,19 @@
     transition: 0.5s;
 }
 
+.NumberPhone {
+    display: block;
+}
+.fa-phone {
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+}
+.activeO {
+    display: block;
+}
 @media (max-width: 1440px) {
     .pages {
         margin-left: 30px;
@@ -206,8 +221,61 @@
     }
 }
 @media (max-width: 1024px) {
+    .NumberPhone {
+        display: none;
+    }
+    .fa-phone {
+        display: block;
+        font-size: 14px;
+        color: #ffffff;
+    }
+    .tel {
+        width: 14px !important;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        right: 0;
+    }
+    .LogoI {
+        display: none;
+    }
+    .MiniLogoI {
+        display: block;
+    }
+    .logo {
+        width: 63px !important;
+    }
 }
 @media (max-width: 768px) {
+    .Navigation {
+        margin-top: 1000px;
+    }
+    .pages {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 132px);
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: -1000px;
+        z-index: 9999;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+    }
+    .Buy {
+        text-align: center;
+        align-items: center;
+    }
+    .BuyO {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        border: none;
+        color: #ffffff;
+    }
 }
 @media (max-width: 425px) {
 }

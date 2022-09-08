@@ -1,37 +1,36 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  padding-inline-start: 0px;
-  max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  font-weight: 900;
-  font-family: "Work Sans";
-  font-style: normal;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-weight: 900;
+    font-family: "Work Sans";
+    font-style: normal;
 }
 
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 ol,
 ul {
-  list-style-type: none;
-  padding-inline-start: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
-

@@ -8,7 +8,7 @@ export function selectDate() {
     const InteriorLi = document.querySelector(".InteriorLi");
     const AllCard = document.querySelector(".AllCard");
     if (AllLi.classList.contains("active")) {
-        console.log("Пользователь даун 1");
+        console.log("Повторное нажатие");
     } else {
         AllLi.classList.add("active");
         BuildingLi.classList.remove("active");
@@ -23,7 +23,7 @@ export function selectDateS() {
     const InteriorLi = document.querySelector(".InteriorLi");
     const AllCard = document.querySelector(".AllCard");
     if (BuildingLi.classList.contains("active")) {
-        console.log("Пользователь даун 2");
+        console.log("Повторное нажатие");
     } else {
         AllLi.classList.remove("active");
         BuildingLi.classList.add("active");
@@ -37,11 +37,25 @@ export function selectDateT() {
     const InteriorLi = document.querySelector(".InteriorLi");
     const Interior = document.querySelector(".Interior");
     if (InteriorLi.classList.contains("active")) {
-        console.log("Пользователь даун 3");
+        console.log("Повторное нажатие");
     } else {
         AllLi.classList.remove("active");
         BuildingLi.classList.remove("active");
         InteriorLi.classList.add("active");
         Interior.classList.add("activeSlideN");
     }
+}
+
+export function CheckSv() {
+    const Razv = document.querySelector(".Razv");
+    const BuyO = document.querySelector(".BuyO");
+    BuyO.classList.toggle("activeO");
+    console.log("Делаю тогл номер ?");
+}
+
+export function Razv() {
+    const Navigation = document.querySelector(".Navigation");
+    const BuyO = document.querySelector(".BuyO");
+    BuyO.classList.remove("activeO");
+    console.log("Делаю ремув номер ?");
 }
