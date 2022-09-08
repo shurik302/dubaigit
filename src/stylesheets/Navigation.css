@@ -206,7 +206,13 @@
     display: none;
 }
 .activeO {
+    display: block !important;
+}
+.Buy:hover > .BuyO {
     display: block;
+}
+.Func {
+    display: none;
 }
 @media (max-width: 1440px) {
     .pages {
@@ -252,7 +258,7 @@
     }
     .pages {
         position: absolute;
-        width: 100%;
+        width: 247px;
         height: calc(100vh - 132px);
         display: flex;
         flex-direction: column;
@@ -275,6 +281,26 @@
         position: relative;
         border: none;
         color: #ffffff;
+        display: none;
+    }
+    .Buy:hover > .BuyO {
+        display: none;
+    }
+    .Func {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        margin-top: -1000px;
+    }
+    .Razv {
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+    .BuyO li {
+        text-align: center;
     }
 }
 @media (max-width: 425px) {

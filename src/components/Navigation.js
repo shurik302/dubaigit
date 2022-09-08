@@ -7,13 +7,14 @@ import { Razv } from "../Tech/Function";
 
 function Navigation() {
     return (
-        <div className="Navigation" onClick={CheckSv}>
+        <div className="Navigation">
             <div className="RightNav">
                 <div className="logo">
                     <img className="LogoI" src={logo} />
                     <img className="MiniLogoI" src={MiniLogo} />
                 </div>
                 <i class="fa-solid fa-bars"></i>
+                <div className="Func" onClick={CheckSv}></div>
                 <ol className="pages">
                     <li className="Buy">
                         <div className="Razv" onClick={Razv}>
